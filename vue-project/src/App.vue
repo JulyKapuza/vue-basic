@@ -24,6 +24,11 @@ const successStyleObj = {
   backgroundColor: "violet",
   border: "1px solid blueviolet",
 };
+const warningStyleObj = {
+  color: "#0e6b66",
+  backgroundColor: "lightseagreen",
+  border: "1px solid #0e6b66",
+};
 </script>
 
 <template>
@@ -49,7 +54,9 @@ const successStyleObj = {
     </h3>
     <button :disabled="isButtonDisabled">Bind</button>
     <h3 :style="styleObject">Style Object</h3>
+    <!-- Останній об'єкт має пріоритет коли є конфліктні стилі -->
     <div :style="[baseStyleObj, successStyleObj]">Success Style</div>
+    <div :style="[baseStyleObj, warningStyleObj]">Warning Style</div>
   </div>
 </template>
 
@@ -66,6 +73,7 @@ const successStyleObj = {
 
 .promoted {
   font-style: italic;
+  /* color: #0e6b66 */
 }
 
 .new {
