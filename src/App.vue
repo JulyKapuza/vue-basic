@@ -4,7 +4,9 @@
 // import ConditionalRendering from './components/ConditionalRending.vue'
 // import EventListening from './components/EventListening.vue'
 // import FormEvent from './components/FormEvent.vue';
-import Input from "./components/Input.vue";
+// import Input from "./components/Input.vue";
+import Conditional from './components/Conditinal.vue'
+import List from './components/List.vue'
 </script>
 
 <template>
@@ -14,7 +16,9 @@ import Input from "./components/Input.vue";
     <!-- <ConditionalRendering/> -->
     <!-- <EventListening/> -->
     <!-- <FormEvent/> -->
-    <Input />
+    <!-- <Input /> -->
+    <!-- <Conditional/> -->
+    <List/>
   </div>
 </template>
 
