@@ -1,7 +1,11 @@
 <script setup>
-import { ref } from "vue";
-const newTitle = ref('')
-const newText= ref('')
+import { ref, reactive } from "vue";
+
+const post = reactive({
+  newTitle: '',
+  newText: '',
+})
+
 let id = 0
 const posts = ref([
   {
@@ -22,9 +26,9 @@ const posts = ref([
 ]);
 
 function addPost() {
-    posts.value.push({ id: id++, title: newTitle.value, text: newText.value })
-    newTitle.value = ''
-    newText.value = ''
+    posts.value.push({ id: id++, title:  post.newTitle, text:  post.newText })
+    post.newTitle = ''
+    post.newText = ''
 } 
 </script>
 
@@ -32,8 +36,8 @@ function addPost() {
   <div class="container">
    <form  @submit.prevent="addPost">
             <h2>Add posts</h2>
-            <input v-model="newTitle" class="input" type="text" placeholder="enter name" />
-            <input v-model="newText" class="input" type="text" placeholder="description" />
+            <input v-model="post.newTitle" class="input" type="text" placeholder="enter name" />
+            <input v-model="post.newText" class="input" type="text" placeholder="description" />
             <button class="btn">Create post</button>
           </form>
 
