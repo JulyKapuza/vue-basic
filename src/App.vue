@@ -8,7 +8,8 @@
 // import Conditional from './components/Conditinal.vue'
 // import List from './components/List.vue'
 // import Lifecycle from './components/Lifecycle.vue';
-import Posts from './components/PostsList.vue';
+// import Posts from './components/PostsList.vue';
+import Multiselect from './components/Multiselect.vue';
 </script>
 
 <template>
@@ -22,7 +23,8 @@ import Posts from './components/PostsList.vue';
     <!-- <Conditional/> -->
     <!-- <List/> -->
     <!-- <Lifecycle/> -->
-    <Posts/>
+    <!-- <Posts/> -->
+    <Multiselect/>
   </div>
 </template>
 
