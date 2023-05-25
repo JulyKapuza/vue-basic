@@ -8,6 +8,7 @@
     </div>
 </template>
 
+
 <script setup>
 import { ref } from 'vue';
 import axios from 'axios'
@@ -16,7 +17,7 @@ let posts = ref([])
 const getPosts = () => {
     axios.get(` https://jsonplaceholder.typicode.com/posts`)
         .then((response) => {
-            posts = response.data
+            posts.value = response.data;
         console.log(posts)
         })
     .catch((error)=>console.log(error))
