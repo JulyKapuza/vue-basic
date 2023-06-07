@@ -9,8 +9,9 @@
 // import List from './components/List.vue'
 // import Lifecycle from './components/Lifecycle.vue';
 // import Posts from './components/PostsList.vue';
-import FetchData from './components/FetchData.vue';
+// import FetchData from './components/FetchData.vue';
 // import Multiselect from './components/Multiselect.vue';
+import Button from './components/Button.vue';
 </script>
 
 <template>
@@ -26,7 +27,8 @@ import FetchData from './components/FetchData.vue';
     <!-- <Lifecycle/> -->
     <!-- <Posts/> -->
     <!-- <Multiselect/> -->
-    <FetchData/>
+    <!-- <FetchData/> -->
+    <Button/>
   </div>
 </template>
 
