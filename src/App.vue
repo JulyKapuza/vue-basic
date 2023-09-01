@@ -10,8 +10,9 @@
 // import Lifecycle from './components/Lifecycle.vue';
 // import Posts from './components/PostsList.vue';
 // import FetchData from './components/FetchData.vue';
-// import Multiselect from './components/Multiselect.vue';
-import Button from './components/Button.vue';
+import Multiselect from './components/Multiselect.vue';
+// import Button from './components/Button.vue';
+// import ModalWindow from './components/ModalWindow.vue';
 </script>
 
 <template>
@@ -26,13 +27,14 @@ import Button from './components/Button.vue';
     <!-- <List/> -->
     <!-- <Lifecycle/> -->
     <!-- <Posts/> -->
-    <!-- <Multiselect/> -->
+    <Multiselect/>
     <!-- <FetchData/> -->
-    <Button/>
+    <!-- <Button/> -->
+  
   </div>
 </template>
 
-<style >
+<style scope lang="scss" >
 *{
   margin:0;
   padding:0;
@@ -43,4 +45,5 @@ import Button from './components/Button.vue';
 ul{
 list-style: none;
 }
+
 </style>

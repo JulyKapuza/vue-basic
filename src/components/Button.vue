@@ -8,11 +8,11 @@
 <script setup>
 import { ref, computed } from 'vue';
 
-// Стан компонента
-const period = ref('day'); // Початковий період - day
-const changeText = ref('Change per {{ day }}');
 
-// Обчислювані властивості
+const period = ref('day')
+const changeText = ref('Change per {{ day }}')
+
+
 const buttonText = computed(() => {
     return period.value === 'day' ? 'Month' : 'Year';
 });
